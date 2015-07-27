@@ -58,8 +58,10 @@ $.extend($.easing,
     function populateDestinations() {
         navItems.each(function(){
             var scrollID = $(this).attr('href').substring(1);
-            navs[scrollID] = (settings.activateParentNode)? this.parentNode : this;
-            sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
+            if scrollID != "blog/" {
+                navs[scrollID] = (settings.activateParentNode)? this.parentNode : this;
+                sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
+            }
         });
     }
 
