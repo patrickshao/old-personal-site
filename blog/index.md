@@ -3,29 +3,22 @@ layout: default
 title: Blog
 permalink: /blog/
 ---
-<body>
-{% for page in site.posts reversed %}
-  {%if page.categories contains 'blog'%}
-    {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-    <div id="{{id}}" class="section p-{{id}}">
-      {% if page.icon %}
-      <div class="subtlecircle sectiondivider imaged">
-        <img src="{{page.icon}}" alt="section icon" />
-        <h5 class="icon-title">{{ page.title }}</h5>
-      </div>
-      {% elsif page.fa-icon %}
-      <div class="subtlecircle sectiondivider faicon">
-        <span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
-        </span>
-        <h5 class="icon-title">{{ page.title }}</h5>
-      </div>
-      {% endif %}
-      <div class="container {{ page.style }}">
-        {{ page.content }}
-      </div>
-    </div>
-  {% endif %}
-{% endfor %}
-</body>
+<h1 class="page-heading">Posts</h1>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    {%if post.categories contains 'blog'%}  
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {{post.url}}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+
