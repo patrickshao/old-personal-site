@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Blog
 permalink: /blog/
 ---
@@ -10,7 +10,6 @@ permalink: /blog/
     {%if post.categories contains 'blog'%}  
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        {{post.url}}
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
