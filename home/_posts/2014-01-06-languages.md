@@ -2,7 +2,7 @@
 title: "Languages"
 bg: purple  #defined in _config.yml, can use html color like '#0fbfcf'
 color: white   #text color
-fa-icon: th-list
+fa-icon: laptop
 ---
 **Competent:**
 
@@ -14,12 +14,13 @@ fa-icon: th-list
   - jQuery
 
 **Familiar:**
-
+ 
+- C / C++
+- Ruby
 - D3.js
 - Selenium
 - MySQL
-- MongoDB 
-- C / C++
+- MongoDB
 - NodeJS
 - Markdown
 - SASS

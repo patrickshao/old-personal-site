@@ -5,7 +5,7 @@ color: white   #text color
 fa-icon: briefcase
 ---
 
-###[IRIS.TV][iris] Chief Engineering Intern (January 2015 - Present)
+###[IRIS.TV][iris] - Chief Engineering Intern (January 2015 - Present)
 
 - Integrated the IRIS.TV plugin into the JWPlayer using Javascript.
 - Created an automated testing suite that continuously checks the IRIS API and backend and notifies the development team when there are any issues.
@@ -15,7 +15,7 @@ fa-icon: briefcase
 - Increased documentation of internal processes
 
 
-###[cartpool][cart] Co-founder and CTO/COO (April 2015 - Present)
+###[cartpool][cart] - Co-founder and CTO/COO (April 2015 - Present)
 
 cartpool is a simple, dual-purpose delivery startup founded in 2015 in Southern California. We provide deliveries straight to your dorm and a community-based service. 
 
