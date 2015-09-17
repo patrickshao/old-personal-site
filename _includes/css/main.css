@@ -64,6 +64,10 @@ hr {
   border-color: {{ site.colors.black }};
 }
 
+#profile-pic{
+  height:250px;
+}
+
 .container { word-wrap: break-word; }
 .center { text-align: center; }
 .left, .container .left { text-align: left; }
