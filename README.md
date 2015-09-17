@@ -1,3 +1,4 @@
+#Patrick Shao's Personal Website
+Currently hosted on patrickshao.me
 
-This is a compressed-commit version of
-[github.com/t413/SinglePaged](https://github.com/t413/SinglePaged)
+The website is forked verson of github.com/t413/SinglePaged 
