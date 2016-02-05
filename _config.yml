@@ -10,7 +10,7 @@ exclude: [CNAME, README.md, .gitignore]
 timezone: null
 lsi: false
 markdown: kramdown
-highlighter: rogue
+highlighter: rouge
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 ### content configuration ###
